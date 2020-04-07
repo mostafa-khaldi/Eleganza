@@ -1,4 +1,4 @@
-window.location.replace("./index.html#home");
+// window.location.replace("./index.html#home");
 
 window.addEventListener("resize", function(event){
     console.log(window.innerWidth);
