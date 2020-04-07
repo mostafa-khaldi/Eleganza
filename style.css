@@ -1,0 +1,329 @@
+@font-face {
+    font-family: Didot;
+    font-weight: 100;
+    src: url(./fonts/Didot.ttf);
+}
+
+@font-face {
+    font-family: HelveticaLight;
+    font-weight: 100;
+    src: url(./fonts/HelveticaNeue-Light.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: 'HelveticaLight';
+    font-weight: 100;
+    overflow-x: hidden;
+}
+
+#main-page {
+    transition: .2s ease-in-out;
+}
+
+#side-bar {
+    display: none;
+    transition: .2s ease-in-out;
+}
+
+header {
+    background-color: black;
+    color: white;
+    margin-bottom: 5em;
+}
+
+.nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    justify-content: space-between;
+}
+
+#home {
+    color: #fcda05;
+}
+
+.logo {
+    justify-content: center;
+}
+
+.contact-icon {
+    justify-content: flex-end;
+}
+
+.toggle {
+    display: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 1.2em;
+    padding: 1em 0;
+}
+
+.logo img {
+    width: 60%;
+}
+
+.contact-icon a img {
+    width: 30%;
+    transition: .2s ease-in-out;
+}
+
+.contact-icon a img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;  
+    width: 90%;
+    margin: auto;
+}
+
+.hero-item-0 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+}
+
+.hero-item-1, .hero-item-2 {
+    flex-basis: 42.5%;
+}
+
+.hero-item-3 {
+    flex-basis: 5%;
+}
+
+.hero-item-0 img {
+    width: 22%;
+    margin: 0 0 2em;
+}
+
+.hero-item-2 img {
+    width: 95%;
+}
+
+.hero-item-1 h1 {
+    font-size: 7em;
+    font-family: 'Didot';
+    line-height: .8em;
+    margin: 0;
+}
+
+.hero-item-1 p {
+    font-size: 2em;
+}
+
+.about {
+    display: flex;
+    padding-top: 5em;
+}
+
+.about-left-column, .about-right-column {
+    flex-basis: 20%;
+}
+
+.about-image {
+    flex-basis: 60%;
+}
+
+.about-paragraph { 
+    flex-basis: 20%;
+    padding-right: 5em;
+}
+
+.about div h1 {
+    font-size: 7em;
+    margin: 0;
+    font-family: 'Didot';
+}
+
+.about-paragraph p {
+    font-size: 2em;
+    text-align: center;
+}
+
+.about div img {
+    width: 90%;
+}
+
+.about-right-column hr {
+    margin-top: 5em;
+    border-top: .1em solid black;
+}
+
+.collection-container {
+    background-color: black;
+    margin: 7em 0;
+    padding: 5em 0;
+    color: white;
+}
+
+.collection {
+    display: flex;
+    margin-top: -10em;
+    align-items: flex-end;
+}
+
+.collection-left-column, .collection-right-column {
+    flex-basis: 20%;
+}
+
+.collection-header {
+    flex-basis: 10%;
+}
+
+.collection-paragraph, .collection-image {
+    flex-basis: 25%;
+}
+
+.collection-header h1 {
+    font-size: 7em;
+    font-family: 'Didot';
+    margin: 0;
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+}
+
+.collection-paragraph p {
+    font-size: 2em;
+}
+
+.collection-paragraph a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fcda05;
+}
+
+.collection-image img {
+    width: 100%;
+}
+
+.collection-left-column hr {
+    border-top: .1em solid white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 7em;
+}
+
+.contact-header {
+    display: flex;
+    margin: 0 0 5em;
+}
+
+ .contact-h {
+     display: flex;
+     justify-content: flex-end;
+     flex-basis: 85%;
+ }
+
+ .contact-hr {
+     flex-basis: 15%;
+ }
+
+ .contact-hr hr {
+     border-top: .1em solid black;
+     margin-top: 5em;
+ }
+
+ .contact-h h1 {
+     font-size: 7em;
+     font-family: 'Didot';
+     margin: 0;
+     padding-right: .5em;
+ }
+
+ .contact-form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .contact-form form {
+     width: 70%;
+ }
+
+ input[type="text"], input[type="email"], textarea{
+     width: 45%;
+     margin: 0 2.5%;
+     font-size: 1em;
+     padding: 1em 0 1em 2em;
+     color: #646464;
+     border: 0;
+     border-bottom: .05em solid #cecece;
+ }
+
+ textarea {
+     width: 95%;
+     margin-top: 4em;
+ }
+
+ input::placeholder, textarea::placeholder {
+     color: rgb(230, 227, 227);
+ }
+
+ button {
+     width: 95%;
+     margin-top: 4em;
+     margin-left: 2.5%;
+     padding: .7em;
+     font-size: 1em;
+     border-radius: .4em;
+     background-color: black;
+     color: #fcda05;
+ }
+
+ footer {
+     width: 80%;
+     margin: 0 auto 2em;
+     display: flex;
+     align-items: center;
+ }
+
+ footer div{
+     flex: 1;
+ }
+
+ .up-icon a img {
+     width: 12%;
+ }
+
+ .footer-logo img {
+    width: 50%;
+ }
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.up-icon a{
+    display: flex;
+    justify-content: flex-end;
+}
